@@ -4,7 +4,7 @@
 	<title>Static</title>
 	<script src="http://use.edgefonts.net/josefin-slab.js"></script>
 	<script src="http://use.edgefonts.net/merriweather.js"></script>
-	<link rel="stylesheet" href="http://localhost/wordpresslab/wp-content/themes/statictheme/style.css"/>
+	<link rel="stylesheet" href="wp-content/themes/statictheme/style.css"/>
 </head>
 	<body>
 		<header>
@@ -17,7 +17,7 @@
 			</nav>
 		</header>
 		<section>
-			<img src="http://localhost/wordpresslab/wp-content/themes/statictheme/images/falcon.jpg" />
+			<img src="wp-content/themes/statictheme/images/falcon.jpg" />
 			<section>
 				<p>Static is a figment of your imagination. It looks like a living, breathing website based on a CMS, but in reality it is only a static page that has been installed as a Wordpress theme. You will find addresses that lead to undetermined locations, links that have no destinations, images that are not where they appear to be. You're traveling through another dimension&mdash;a dimension not only of sight and sound but of mind. A journey into a wondrous land whose boundaries are that of imagination. That's a signpost up ahead: your next stop: the Twilight Zone!</p>
 				<p>Just kidding. Seriously, it's only a practice theme... ;)</p>
@@ -30,6 +30,8 @@
 			<p>12 Grimmauld Place, London</p>
 			<p>England, The World, The Universe</p>
 			<p>Phone: +44 20 1066 1701</p>
+			<br />
+			<p><a href="wp-admin">GO TO DASHBOARD</a></p>
 		</footer>
 	</body>
 </html>
