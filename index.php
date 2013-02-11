@@ -16,7 +16,7 @@
 			</nav>
 		</header>
 		<section>
-			<img id="falcon" src="wp-content/themes/statictheme/images/falcon.jpg" />
+			<img id="falcon" src="<?php bloginfo( 'stylesheet_directory' );?>/images/falcon.jpg" />
 			
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			
