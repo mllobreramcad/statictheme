@@ -11,19 +11,27 @@
 			<h1><?php bloginfo( 'name' ); ?></h1>
 			<nav>
 				<ul>
-					<li>Home</li>
-					<li>WordPress</li>
+					<?php wp_nav_menu( array( 'menu' => 'Main Nav' ) ); ?>
 				</ul>
 			</nav>
 		</header>
 		<section>
-			<img src="wp-content/themes/statictheme/images/falcon.jpg" />
+			<img id="falcon" src="wp-content/themes/statictheme/images/falcon.jpg" />
+			
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			
 			<section>
-				<h1>About Static</h1>
-				<p>Static is a figment of your imagination. It looks like a living, breathing website based on a CMS, but in reality it is only a static page that has been installed as a Wordpress theme. You will find addresses that lead to undetermined locations, links that have no destinations, images that are not where they appear to be. You're traveling through another dimension&mdash;a dimension not only of sight and sound but of mind. A journey into a wondrous land whose boundaries are that of imagination. That's a signpost up ahead: your next stop: the Twilight Zone!</p>
-				<p>Just kidding. Seriously, it's only a practice theme... ;)</p>
-				<p class="twist">(...Or is it? <em>Muahahahaha</em>........)</p>
+				<h1><a href="<?php the_permalink(); ?>" title="For More Info on <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+				
+				<?php the_content(); ?>
+				
 			</section>
+			
+			<?php endwhile; else: ?>
+				<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+			<?php endif; ?>
+			
+			
 		</section>
 		<footer>
 			<h1>Contact Us</h1>
