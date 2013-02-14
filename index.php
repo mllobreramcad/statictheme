@@ -10,8 +10,16 @@
 		<header>
 			<?php get_header(); ?>
 		</header>
+		
+		
+		<div id="content">
+		<aside>
+			<?php get_sidebar(); ?>
+		</aside>
+		
+		
+		
 		<section>
-			<img id="falcon" src="<?php bloginfo( 'stylesheet_directory' );?>/images/falcon.jpg" />
 			
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 			
@@ -28,6 +36,11 @@
 			
 			
 		</section>
+		</div><!--End Content-->
+		
+		
+		
+		
 		<footer>
 			<?php get_footer(); ?>
 		</footer>

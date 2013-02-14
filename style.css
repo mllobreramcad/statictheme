@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-	color: #BBB;
+	color: #777;
 }
 
 header h1 {
@@ -68,13 +68,109 @@ body {
 	width: 90%;
 	margin-left:auto;
 	margin-right:auto;
+	position: relative;
 }
+
+#content {
+	position: relative;
+	/*border: thin solid red;*/
+	margin-top: 0px;
+}
+
+aside {
+	border: thin solid black;
+	position: absolute;
+	right: 0px;
+	top: -25px;
+	/*width: 170px;*/
+	width: 230px;
+	height: 110%;
+	/*padding: 10px;
+	padding-top: 70px;*/
+	background: black;
+	z-index: -100;
+	color: white;
+	font-family: 'orator std', sans-serif;
+}
+
+/*aside > .widget {
+	width: 20px;
+	position: absolute;
+	left: -100px;
+}*/
+
+
+
+
+
+
+
+
+/*IGNORE THIS SECTION. Construction Zone...*/
+
+/*aside > div {
+	position: absolute;
+	font-family: 'orator std', sans-serif;
+	color: white;
+	text-align: right;
+}
+
+aside > .div1 {
+	width: 170px;
+	height: 80px;
+	background-image: url("images/stretch.jpg");	
+	background-size: 100% auto;
+}
+
+aside > .div2 {
+	width: 80px;
+	height: 80px;
+	top: 160px;
+	background-image: url("images/jump.jpg");
+	background-size: 100% auto;
+}
+
+aside > .div3 {
+	width: 80px;
+	height: 170px;
+	position: absolute;
+	right: 10px;
+	top: 160px;
+	background-image: url("images/street.png");
+	background-size: auto 100%;
+}
+
+aside > .div4 {
+	width: 80px;
+	height: 170px;
+	top: 250px;
+	background-image: url("images/hidden.png");
+	background-size: auto 100%;
+}
+
+aside > .div5 {
+	width: 80px;
+	height: 80px;
+	right: 10px;
+	top: 340px;
+	background-image: url("images/skate.jpg");
+	background-size: 100% auto;
+}*/
+
+/*End Construction Zone*/
+
+
+
+
+
+
 
 section > section {
 	width: 60%;
 	max-width: 27.8125em;
 	margin-left: auto;
-	margin-right: 0px;
+	/*margin-right: 200px;*/
+	margin-right: 250px;
 	margin-bottom: 80px;
 	line-height: 1.5em;
 	text-align: justify;
