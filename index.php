@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title><?php bloginfo( 'name' ); ?></title>
-	<script src="http://use.edgefonts.net/josefin-slab.js"></script>
-	<script src="http://use.edgefonts.net/merriweather.js"></script>
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>"/>
-</head>
-	<body>
-		<header>
-			<?php get_header(); ?>
-		</header>
-		
-		
-		<div id="content">
+<?php get_header(); ?>
+<div id="content">
 		<aside>
 			<?php get_sidebar(); ?>
 		</aside>
@@ -41,8 +28,6 @@
 		
 		
 		
-		<footer>
 			<?php get_footer(); ?>
-		</footer>
 	</body>
 </html>
